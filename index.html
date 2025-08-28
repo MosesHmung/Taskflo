@@ -30,6 +30,18 @@
         opacity: 1;
         transform: translateY(0);
       }
+    svg circle {
+      animation: float 6s ease-in-out infinite;
+    }
+    svg circle:nth-child(2) { animation-delay: 1s; }
+    svg circle:nth-child(3) { animation-delay: 2s; }
+    svg circle:nth-child(4) { animation-delay: 3s; }
+    svg circle:nth-child(5) { animation-delay: 4s; }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      )
     
   </style>
 </head>
