@@ -1,64 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taskflo AI</title>
-
-  <!-- TailwindCSS CDN (must be in <head>) -->
+    <!-- TailwindCSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Your brand colors -->
   <style>
-    :root{
-      --taskflo-ocean:#1E6091;
-      --taskflo-cerulean:#4EA8DE;
-      --taskflo-sky:#89C2D9;
-      --taskflo-powder:#A9D6E5;
-      --taskflo-coolgray:#ADB5BD;
-      --taskflo-silver:#DEE2E6;
-      --taskflo-cloud:#F8F9FA;
+    : root {
+      --taskflo-ocean: #1E6091;
+      --taskflo-cerulean: #4EA8DE;
+      --taskflo-sky: #89C2D9;
+      --taskflo-powder: #A9D6E5;
+      --taskflo-coolgray: #ADB5BD;
+      --taskflo-silver: #DEE2E6;
+      --taskflo-cloud: #F8F9FA; 
     }
-    html{ scroll-behavior:smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
+    /* fade-in */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(15px);
+      animation: fadeIn 0.5s forwards;
+    }
+    
+    
   </style>
+  
 </head>
 <body class="font-sans text-gray-900">
-
-  <!-- Navbar -->
+  <!--  Navbar  -->
   <header class="bg-white/80 backdrop-blur sticky top-0 z-50 shadow-sm">
     <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
-      <!-- Use a RELATIVE path for GitHub Pages -->
-      <a href="./" class="flex items-center">
-        <!-- If logo is in /public/logo.png, use the path below -->
-        <img src="public/logo.png" alt="Taskflo AI logo"
-             class="h-10 w-auto hover:opacity-80 transition">
+      <a href="/" class="flex items-center">
+        <img src="public/logo.png" alt="Taskflo AI logo" class="h-10 w-auto hover:opacity-80 transition">
       </a>
-
       <nav class="hidden md:flex gap-8 text-sm font-medium">
-        <a href="#services"    class="transition-colors hover:text-[var(--taskflo-ocean)]">Services</a>
+        <a href="#services" class="transition-colors hover:text-[var(--taskflo-ocean)]">Services</a>
         <a href="#who-we-help" class="transition-colors hover:text-[var(--taskflo-ocean)]">Who We Help</a>
-        <a href="#process"     class="transition-colors hover:text-[var(--taskflo-ocean)]">Process</a>
+        <a href="#process" class="transition-colors hover:text-[var(--taskflo-ocean)]">Process</a>
       </nav>
-
-      <a href="#contact"
-         class="hidden md:inline-block bg-gradient-to-r from-[var(--taskflo-cerulean)] to-[var(--taskflo-sky)]
-                px-4 py-2 rounded-full text-white text-sm font-semibold transition duration-200 hover:opacity-90 shadow">
+      <a href="#contact" class="hidden md:inline-block bg-gradient-to-r from-[var(--taskflo-cerulean)] to-[var(--taskflo-sky)] px-4 py-2 rounded-full text-white text-sm font-semibold transition-colors duration-200 hover:opacity-90 shadow">
         Book a Call
       </a>
     </div>
   </header>
 
-  <!-- Temp content so you can scroll to anchors -->
-  <main class="max-w-7xl mx-auto px-6 py-16 space-y-32">
-    <section id="services"><h2 class="text-2xl font-semibold">Services</h2></section>
-    <section id="who-we-help"><h2 class="text-2xl font-semibold">Who We Help</h2></section>
-    <section id="process"><h2 class="text-2xl font-semibold">Process</h2></section>
-    <section id="contact"><h2 class="text-2xl font-semibold">Contact</h2></section>
-  </main>
-
-</body>
-</html>
-
-
   <!--  Hero  -->
-  <
