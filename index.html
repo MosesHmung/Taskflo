@@ -32,11 +32,13 @@
       }
     .float {
       animation: float 6s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
     }
     @keyframes float {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-15px); }
-      )
+    }
     
   </style>
 </head>
@@ -80,11 +82,11 @@
     </div>
     <!--  Decorations  -->
     <svg class="absolute bottom-0 left-1/2 -translate-x-1/2" width="1440" height="150" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="float 200" cy="100" r="40" fill="var(--taskflo-cerulean)" opacity="0.3"/>
-      <circle cx="float 400" cy="120" r="25" fill="var(--taskflo-sky)" opacity="0.4"/>
-      <circle cx="float 700" cy="80"  r="50" fill="var(--taskflo-ocean)" opacity="0.25"/>
-      <circle cx="float 1000" cy="130" r="30" fill="var(--taskflo-powder)" opacity="0.35"/>
-      <circle cx="float 1250" cy="90"  r="20" fill="var(--taskflo-cerulean)" opacity="0.5"/>
+      <circle cx="200" cy="100" r="40" fill="var(--taskflo-cerulean)" opacity="0.3" class="float"/>
+      <circle cx="400" cy="120" r="25" fill="var(--taskflo-sky)" opacity="0.4" class="float"/>
+      <circle cx="700" cy="80"  r="50" fill="var(--taskflo-ocean)" opacity="0.25" class="float"/>
+      <circle cx="1000" cy="130" r="30" fill="var(--taskflo-powder)" opacity="0.35" class="float"/>
+      <circle cx="1250" cy="90"  r="20" fill="var(--taskflo-cerulean)" opacity="0.5" class="float"/>
     </svg>
   </section>
 </body>
