@@ -180,7 +180,7 @@
     <!-- Carousel -->
     <div class="relative mt-12 overflow-hidden">
       <!-- Track -->
-      <div id="reviews" class="flex transition-transform duration-500 ease-out w-full">
+      <div id="reviews-track" class="flex transition-transform duration-500 ease-out w-full">
         
         <!-- Slide 1 -->
         <div class="min-w-full px-4">
@@ -373,7 +373,7 @@
 <script>
     let reviewsIndex = 0;
     const reviewsTotal = 3;
-    const reviewsTrack = document.getElementById("reviews");
+    const reviewsTrack = document.getElementById("reviews-track");
 
     function reviewsUpdate() {
       reviewsTrack.style.transform = `translateX(-${reviewsIndex * 100}%)`;
