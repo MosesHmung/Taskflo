@@ -180,7 +180,7 @@
     <!-- Carousel -->
     <div class="relative mt-12 overflow-hidden">
       <!-- Track -->
-      <div id="reviews" class="flex transition-transform duration-500 ease-out">
+      <div id="reviews" class="flex transition-transform duration-500 ease-out w-full">
         
         <!-- Slide 1 -->
         <div class="min-w-full px-4">
@@ -226,11 +226,18 @@
             </figcaption>
           </figure>
         </div>
-
-      </div>
+      </div> 
+      
+<!-- Controls -->
+      <button onclick="reviewsPrev()" class="absolute left-0 top-1/2 -translate-y-1/2 bg-[var(--taskflo-ocean)] text-white px-3 py-1 rounded-full">‹</button>
+      <button onclick="reviewsNext()" class="absolute right-0 top-1/2 -translate-y-1/2 bg-[var(--taskflo-ocean)] text-white px-3 py-1 rounded-full">›</button>
+    </div>
+  </div>
+</section>
 
 <!-- *Contact* -->
-<section id="contact" class="bg-[var(--taskflo-cloud)] text-[var(--taskflo-ocean)] py-24">
+<section id="contact" 
+  class="bg-[var(--taskflo-cloud)] text-[var(--taskflo-ocean)] py-24">
   <div class="max-w-4xl mx-auto px-6">
     <div class="text-center max-w-2xl mx-auto">
       <h2 class="text-3xl md:text-5xl font-semibold">
@@ -362,17 +369,7 @@
   });
   
 </script>
-      <!-- Controls -->
-      <button onclick="reviewsPrev()" class="absolute left-0 top-1/2 -translate-y-1/2 bg-[var(--taskflo-ocean)] text-white px-3 py-1 rounded-full">‹</button>
-      <button onclick="reviewsNext()" class="absolute right-0 top-1/2 -translate-y-1/2 bg-[var(--taskflo-ocean)] text-white px-3 py-1 rounded-full">›</button>
-    </div>
-  </div>
-</section>
-
-<section id="contact"
-  class = "bg-white text-[var(--taskflo-ocean)] py-24">
-  
-</section>
+      
 <script>
     let reviewsIndex = 0;
     const reviewsTotal = 3;
